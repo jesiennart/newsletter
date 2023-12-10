@@ -98,6 +98,10 @@ input:focus {
   background-color: rgb(3, 3, 72);
   color: #fff;
   cursor: pointer;
+  transition: background-color 0.5s;
+}
+.btn-sub:hover {
+  background-color: rgb(7, 7, 145);
 }
 .error,
 .error::placeholder {
@@ -147,7 +151,6 @@ input:focus {
   border-radius: 20px;
   font-family: "Roboto", Helvetica, sans-serif;
   background-color: white;
-  border: 3px solid black;
 }
 
 .popup h2 {
@@ -178,6 +181,11 @@ span {
   border-radius: 10px;
   background-color: rgb(3, 3, 72);
   align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.pop-btn:hover {
+  background-color: rgb(7, 7, 145);
 }
 
 @media (max-width: 450px) {
@@ -268,6 +276,97 @@ span {
     border-radius: 20px;
     font-family: "Roboto", Helvetica, sans-serif;
     background-color: white;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 1023px) {
+  body {
+    background-color: #fff;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    min-width: 450px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 25px;
+  }
+
+  .graph {
+    padding: 0 2rem;
+    width: auto;
+  }
+  .picture {
+    background-image: url("./assets/images/illustration-sign-up-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .popup {
+    display: none;
+  }
+
+  .attribution {
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+  }
+  .attribution a {
+    text-decoration: none;
+    color: violet;
+  }
+
+  .popup {
+    visibility: hidden;
+    position: absolute;
+    padding: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-color: white;
     border: 3px solid black;
+  }
+
+  .popup h2 {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .popup i {
+    font-size: 2rem;
+    color: tomato;
+    margin: 1rem;
+  }
+  .popup-text {
+    margin: 1rem;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .pop-btn {
+    width: 100%;
+    height: 2.5rem;
+    margin: 0 auto;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(3, 3, 72);
+    align-items: center;
   }
 }
