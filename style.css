@@ -110,8 +110,7 @@ input:focus {
 }
 
 .graph {
-  padding: 0 2rem;
-  width: auto;
+  padding: 1rem;
 }
 .picture {
   background-image: url("./assets/images/illustration-sign-up-desktop.svg");
@@ -232,19 +231,15 @@ span {
     color: tomato;
     margin-right: 1rem;
   }
-
-  .graph {
-    width: auto;
-  }
+ 
   .picture {
     background-image: url("./assets/images/illustration-sign-up-mobile.svg");
     background-position: center;
     background-size: cover;
-    object-fit: cover;
-    width: 90vw;
-    height: 250px;
+    align-items: end;
+    max-width: 80vw;
+    height: 200px;
     border-radius: 20px;
-    margin-bottom: 1rem;
   }
 
   .popup {
